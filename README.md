@@ -11,9 +11,13 @@ OW Datacase - Equipe Mines Paristech
 
 # Remarques
 
-- 3 fichiers de data : le principal en contient 24millions. Il y en 2 samples sur le drive, sinon le fichier Data_tuto permet de les extraire en .npy et les utiliser en matrice numpy ensuite.
+- 3 fichiers de data : le principal en contient 24millions. Il y en 2 samples sur le drive, sinon le fichier Data_tuto permet de les extraire en .npy et les utiliser en matrice numpy ensuite via 
 
-- le fichier .html : première visio d'une map avec les différents parkings du dataset dessus 
+```python
+dataset = np.load("/path/name_file.npy")
+```
+
+- le fichier .html : première visio d'une map avec les différents parkings du dataset dessus (réalisé avec map-2.py)
 
 - le fichier parking-basique.py permet d'extraire des premières data par parking en .npy : les graphes liés arrivent soon. Pour le lire, suffit de lacher un bon 
 ```
