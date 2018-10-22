@@ -15,7 +15,13 @@ OW Datacase - Equipe Mines Paristech
 
 # AIDES
 
-- Pour les fichiers .html : ouvrir, cliquer sur "Raw", copier-coller le texte dans un éditeur de texte (atom, visual studio code,...) et changer l'extension de .txt en .html (sur votre ordinateur) : plus qu'à l'ouvrir.
+- Pour les fichiers .html : ouvrir, cliquer sur "Raw", copier-coller le texte :
+```html
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /> .......
+ ```
+dans un éditeur de texte (atom, visual studio code,...) et changer l'extension de .txt en .html (sur votre ordinateur) : plus qu'à l'ouvrir.
 
 - préalablement installer Panda, numpy, et si autre error du type : 
 ```python
