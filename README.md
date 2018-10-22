@@ -15,6 +15,8 @@ OW Datacase - Equipe Mines Paristech
 
 # AIDES
 
+- Pour les fichiers .html : ouvrir, cliquer sur "Raw", copier-coller le texte dans un éditeur de texte et changer l'extension de .txt en .html (sur votre ordinateur) : plus qu'à l'ouvrir.
+
 - préalablement installer Panda, numpy, et si autre error du type : 
 ```python
 Traceback (most recent call last):                                                                                                             
