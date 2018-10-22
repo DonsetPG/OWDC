@@ -3,7 +3,7 @@ OW Datacase - Equipe Mines Paristech
 
 # TODO 
 
-- ranger un peu les files du git | ======================> (75%) |
+- ranger un peu les files du git | ======================> (100%) |
 - check comment faire des diagramme de voronoï lisible | > (0%) |
 - tracer les graphes de parking-carac-basique  | ========> (0%) |
 - tracer les graphes de arrondissement-carac-basique  | => (100%) |
