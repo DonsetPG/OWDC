@@ -25,7 +25,7 @@ Traceback (most recent call last):
  Vérifier que pip est installé par :
  
  ```python
- pip /--version
+ pip --version
  ```
  sinon, go sur : https://pip.pypa.io/en/stable/installing/
  
