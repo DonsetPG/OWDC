@@ -11,6 +11,9 @@ OW Datacase - Equipe Mines Paristech
 
 # Remarques
 
+
+# AIDES
+
 - préalablement installer Panda, numpy, et si autre error du type : 
 ```python
 Traceback (most recent call last):                                                                                                             
@@ -40,7 +43,7 @@ pip install pandas
 dataset = np.load("/path/name_file.npy")
 ```
 
-- le fichier .html : première visio d'une map avec les différents parkings du dataset dessus (réalisé avec map-2.py)
+- le fichier .html : première visio d'une map avec les différents parkings du dataset dessus (réalisé avec map-2.py). Dispo en image aussi.
 
 - le fichier parking-basique.py permet d'extraire des premières data par parking en .npy : les graphes liés arrivent soon. Pour le lire, suffit de lacher un bon 
 ```
