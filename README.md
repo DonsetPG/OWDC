@@ -11,6 +11,29 @@ OW Datacase - Equipe Mines Paristech
 
 # Remarques
 
+- préalablement installer Panda, numpy, et si autre error du type : 
+```python
+Traceback (most recent call last):                                                                                                             
+  File "script.py", line 21, in <module>                                                                                                
+     import pandas as pd                                                                                                                        
+ ImportError: No module named pandas
+ ```
+ 
+ Vérifier que pip est installé par :
+ 
+ ```python
+ pip --version
+ ```
+ sinon, go sur : https://pip.pypa.io/en/stable/installing/
+ 
+ et : 
+ 
+ pour tout les modules : 
+ 
+ ```python
+pip install pandas
+ ```
+ 
 - 3 fichiers de data : le principal en contient 24millions. Il y en 2 samples sur le drive, sinon le fichier Data_tuto permet de les extraire en .npy et les utiliser en matrice numpy ensuite via 
 
 ```python
