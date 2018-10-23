@@ -11,7 +11,6 @@ OW Datacase - Equipe Mines Paristech
 - tracer x/y pour toutes les data  | ====================> (0%) |
 - vérifier les ratios et leurs calculs (Paul) | =========> (0%) |
 - check les politiques de prix à l'étrangers et ici | ===> (0%) |
-- HelloWorld
 
 # Remarques
 
