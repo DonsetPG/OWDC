@@ -4,7 +4,7 @@ OW Datacase - Equipe Mines Paristech
 # TODO 
 
 - ranger un peu les files du git | ======================> (100%) |
-- check comment faire des diagramme de voronoï lisible | > (0%) |
+- check comment faire des diagramme de voronoï lisible | > (100%) |
 - tracer les graphes de parking-carac-basique  | ========> (0%) |
 - tracer les graphes de arrondissement-carac-basique  | => (100%) |
 - map avec les caractéristiques de chaque parking  | ====> (0%) |
@@ -12,6 +12,8 @@ OW Datacase - Equipe Mines Paristech
 - vérifier les ratios et leurs calculs (Paul) | =========> (0%) |
 - check les politiques de prix à l'étrangers et ici | ===> (0%) |
 - mettre un jupyter notebook pour display les maps | ====> (0%) |
+- model pour prévoir le taux de frequentation (extrapoler) (0%) |
+- model pour prevoir le co^t de chaque utilisateur (fat) | (0%) |
 
 # Remarques
 
