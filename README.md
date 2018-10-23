@@ -26,7 +26,8 @@ OW Datacase - Equipe Mines Paristech
 <head>    
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" /> .......
  ```
-dans un éditeur de texte (atom, visual studio code,...) et changer l'extension de .txt en .html (sur votre ordinateur) : plus qu'à l'ouvrir.
+dans un éditeur de texte (atom, visual studio code,...) et changer l'extension de .txt en .html (sur votre ordinateur) : plus qu'à l'ouvrir. 
+Sur la droite : un filtre pour afficher les différentes data, les légendes sont en haut.
 
 - préalablement installer Panda, numpy, et si autre error du type : 
 ```python
