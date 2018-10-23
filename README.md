@@ -9,6 +9,7 @@ OW Datacase - Equipe Mines Paristech
 - tracer les graphes de arrondissement-carac-basique  | => (100%) |
 - map avec les caractéristiques de chaque parking  | ====> (0%) |
 - tracer x/y pour toutes les data  | ====================> (0%) |
+- vérifier les ratios et leurs calculs (Paul) | =========> (0%) |
 
 # Remarques
 
