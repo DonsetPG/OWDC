@@ -10,6 +10,8 @@ OW Datacase - Equipe Mines Paristech
 - map avec les caractéristiques de chaque parking  | ====> (0%) |
 - tracer x/y pour toutes les data  | ====================> (0%) |
 - vérifier les ratios et leurs calculs (Paul) | =========> (0%) |
+- check les politiques de prix à l'étrangers et ici | ===> (0%) |
+
 
 # Remarques
 
