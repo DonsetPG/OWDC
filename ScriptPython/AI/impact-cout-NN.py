@@ -13,10 +13,13 @@ from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import PolynomialFeatures
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import cross_val_score
+######## Keras : 
 import keras
 from keras.models import Sequential
 from keras.layers import Dense, Dropout, Activation, BatchNormalization
 from keras.optimizers import SGD
+##########
+
 print("Loading data...")
 dataCoupleX = list(np.load('/Users/paulgarnier/Desktop/Files/GitHub/datacaseOW/data/parking-couple-X.npy'))
 Y2 = list(np.load('/Users/paulgarnier/Desktop/Files/GitHub/datacaseOW/data/parking-couple-Y1.npy'))
@@ -123,12 +126,12 @@ dataCoupleX = scaler.fit_transform(dataCoupleX)
 print("done")
 #for dataCoupleY1:
 print("datacoupleY1...")
-#scalerY = StandardScaler()
-#Y1 = scalerY.fit_transform(Y1)
-#MINY = abs(min(Y1))
+scalerY = StandardScaler()
+Y1 = scalerY.fit_transform(Y1)
+MINY = abs(min(Y1))
 
-#for i in range(len(Y1)):
-    #Y1[i] += MINY
+for i in range(len(Y1)):
+    Y1[i] += MINY
 print("done")
 # For dataCoupleY2 :
 print("datacoupleY2...")
@@ -139,20 +142,24 @@ print("done")
 
 # Building our NN :
 
+# Very basic NN here, only to see how it reacts to our data, and if the previsions seems legit or not.
 
 model = Sequential()
 model.add(Dense(100, activation='relu', input_dim=3))
 model.add(BatchNormalization())
-model.add(Dropout(0.3))
+model.add(Dropout(0.5))
 model.add(Dense(64,activation='relu'))
 model.add(BatchNormalization())
-model.add(Dropout(0.3))
+model.add(Dropout(0.5))
 model.add(Dense(64,activation='relu'))
 model.add(BatchNormalization())
-model.add(Dropout(0.3))
+model.add(Dropout(0.5))
+model.add(Dense(64,activation='relu'))
+model.add(BatchNormalization())
+model.add(Dropout(0.5))
 model.add(Dense(32,activation='relu'))
 model.add(BatchNormalization())
-model.add(Dropout(0.3))
+model.add(Dropout(0.5))
 model.add(Dense(1, activation='elu'))
 model.compile(optimizer='Adam',
               loss='MSE',
@@ -163,7 +170,7 @@ model.compile(optimizer='Adam',
 ##########
 print("start fitting...")
 
-model.fit(x=dataCoupleX, y=Y1,batch_size=256, epochs=2,validation_split=0.3,shuffle=True)
+model.fit(x=dataCoupleX, y=Y1,batch_size=256, epochs=50,validation_split=0.3,shuffle=True)
 model.save('/Users/paulgarnier/Desktop/Files/GitHub/datacaseOW/data/model-hrate-avgcounts.h5')
 #reg = LinearRegression()
 #reg.fit(dataCoupleX,Y1)
@@ -190,9 +197,9 @@ X_test = np.array(X_test)
 X_test = scaler.transform(X_test)
 print(X_test)
 Y_predict =model.predict(X_test)
-#for i in range(len(Y_predict)):
-    #Y_predict[i] -= MINY
-#Y_predict = scalerY.inverse_transform(Y_predict)
+for i in range(len(Y_predict)):
+    Y_predict[i] -= MINY
+Y_predict = scalerY.inverse_transform(Y_predict)
 X_test = scaler.inverse_transform(X_test)
 newX = []
 for line in X_test:
