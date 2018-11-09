@@ -24,7 +24,7 @@ OW Datacase - Equipe Mines Paristech
 
 - {Data,Map,Graph}Maker : fichiers .py permettant la construction de la majorité de nos cartes, graphes, et des tableaux utilisés dans nos calculs.
 - AI : Programme permettant les simulations de nos environnements (GA,NN,RP) et des calculs de revenues. 
-- Exemple de résultats de l'AG : 
+- Exemple de résultats de l'AG (20 générations seulement, pour l'exemple) : 
 
 ![ga](ag.png)
 
