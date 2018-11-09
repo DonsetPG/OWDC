@@ -53,7 +53,7 @@ print(1/RATIO_BIS," ",1/RATIO)
 RATIO = min(RATIO,RATIO_BIS)
 NB_WEEKS = 52.1429
 PROBA_MUTATE = 0.06
-POPULATION_SIZE = 30
+POPULATION_SIZE = 50
 RATIO_TOURNOI = POPULATION_SIZE/2
 ELITE_SIZE = 1
 
@@ -88,6 +88,7 @@ class Solution:
     def __init__(self):
         self.score = 0
         self.prix = [0 for i in range(20)]
+        self.alpha = 0
         self.revenue = 0
         self.revenuePerArrondissement = [0 for i in range(20)]
         self.usersPerArrondissement = [0 for i in range(20)]
@@ -96,6 +97,7 @@ class Solution:
 # On veut ensuite pouvoir créer des solutions aléatoirements. On va ici restreindre nos prix à [1,10]
 
     def generateRandom(self):
+        self.alpha = random.random()
         for i in range(len(self.prix)):
             self.prix[i] = random.randint(2,7) + random.random()
 
@@ -137,7 +139,10 @@ class Solution:
                 if (arrondissement == 1 or arrondissement == 2 or arrondissement == 3) and newHRate < 7.1:
                     newTime = timeSpent
                     deltafreq = 0
-                money = newTime*newHRate*timePaid
+                if hour < 13.1 and hour > 10.1:
+                    money = newTime*(newHRate + newHRate*self.alpha)*timePaid
+                else:
+                    money = newTime*newHRate*timePaid
 
                 if oldHRate < newHRate and deltafreq > 0:
                     deltafreq = - deltafreq
@@ -177,13 +182,19 @@ class Solution:
 # On met maintenant en place les différentes fonctions d'un algorithme génétique :
 
     def mutate(self):
-
+        if random.random() < PROBA_MUTATE:
+            self.alpha = random.random()
         for i in range(len(self.prix)):
             if random.random() < PROBA_MUTATE:
                 self.prix[i] = random.randint(2,7) + random.random()
 
     def get_child(self,solutionBis):
         child = Solution()
+        if random.random() <  0.5:
+            child.alpha = self.alpha
+        else:
+            child.alpha = solutionBis.alpha
+
         for i in range(len(child.prix)):
             if random.random() <  0.5:
                 child.prix[i] = self.prix[i]
@@ -305,7 +316,7 @@ population.firstPopulation()
 
 
 
-while population.generation < 50:
+while population.generation < 20:
     start = time.time()
     print("STARTING GENERATION ",population.generation)
     population = population.computeNextPopulation(X,Y)
@@ -324,7 +335,7 @@ print(population.best.prix)
 print(population.best.revenuePerArrondissement)
 print(population.best.usersPerArrondissement)
 print(population.best.deltaFreqPerArrondissement)
-
+print(population.best.alpha)
 print(" went to generation ",population.generation)
 
 plt.plot(X,Y,'b+')
@@ -332,6 +343,7 @@ plt.plot(X,droite,'r--')
 plt.title('score par generation')
 plt.xlabel('generation')
 plt.ylabel('score')
-plt.gca().legend(('size := 30','with 2014 policy'))
+plt.gca().legend(('size := 50','with 2014 policy'))
 plt.show()
 plt.gcf().clear()
+
