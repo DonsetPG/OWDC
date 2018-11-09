@@ -23,6 +23,7 @@ OW Datacase - Equipe Mines Paristech
 
 
 ![MINES Paristech](Logo_MINES_ParisTech.png)
+![MINES Paristech](logo-oliver-wyman.png)
 
 
 
@@ -32,8 +33,7 @@ OW Datacase - Equipe Mines Paristech
 
 
 
-
-# ___________________________________________________________________
+# _______________________________________________________________
 
 
 
