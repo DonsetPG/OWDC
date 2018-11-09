@@ -4,7 +4,8 @@ OW Datacase - Equipe Mines Paristech / 2018
 ## Le datacase : 
 
 ```html
-L’OW data case challenge est un concours consistant à résoudre une étude de cas business en appliquant des compétences analytiques à un ensemble de données réelles - en l'occurrence des données de la ville de Paris
+L’OW data case challenge est un concours consistant à résoudre une
+étude de cas business en appliquant des compétences analytiques à un ensemble de données réelles - en l'occurrence des données de la ville de Paris
 ```
 
 Nous nous sommes donc penchés sur la question du princing des places de parkings dans la ville de Paris.
