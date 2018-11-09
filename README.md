@@ -1,20 +1,8 @@
 # OWDC
 OW Datacase - Equipe Mines Paristech 
 
-# TODO 
 
-- clean le git pour le rendu | ==========================> (0%) |
-- ranger un peu les files du git | ======================> (100%) |
-- check comment faire des diagramme de voronoï lisible | > (100%) |
-- tracer les graphes de parking-carac-basique  | ========> (100%) |
-- tracer les graphes de arrondissement-carac-basique  | => (100%) |
-- map avec les caractéristiques de chaque parking  | ====> (100%) |
-- check les politiques de prix à l'étrangers et ici | ===> (0%) |
-- mettre un jupyter notebook pour display les maps | ====> (0%) |
-
-
-# Remarques
-
+## Pour l'équipe : 
 
 # AIDES
 
@@ -27,7 +15,7 @@ OW Datacase - Equipe Mines Paristech
 dans un éditeur de texte (atom, visual studio code,...) et changer l'extension de .txt en .html (sur votre ordinateur) : plus qu'à l'ouvrir. 
 Sur la droite : un filtre pour afficher les différentes data, les légendes sont en haut.
 
-- préalablement installer Panda, numpy, et si autre error du type : 
+- préalablement installer Panda, numpy, et si autre errors du type : 
 ```python
 Traceback (most recent call last):                                                                                                             
   File "script.py", line 21, in <module>                                                                                                
@@ -44,7 +32,7 @@ Traceback (most recent call last):
  
  et : 
  
- pour tout les modules : 
+ pour tout les modules (exemple avec pandas) : 
  
  ```python
 pip install pandas
@@ -56,12 +44,5 @@ pip install pandas
 dataset = np.load("/path/name_file.npy")
 ```
 
-- le fichier .html : première visio d'une map avec les différents parkings du dataset dessus (réalisé avec map-2.py). Dispo en image aussi.
 
-- le fichier parking-basique.py permet d'extraire des premières data par parking en .npy : les graphes liés arrivent soon. Pour le lire, suffit de lacher un bon 
-```
-python parking-caracteristiques-basique-1.py
-```
-
-# Autres
 
