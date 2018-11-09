@@ -1,5 +1,22 @@
 # OWDC
-OW Datacase - Equipe Mines Paristech 
+OW Datacase - Equipe Mines Paristech / 2018
+
+## Le datacase : 
+
+```html
+L’OW data case challenge est un concours consistant à résoudre une étude de cas business en appliquant des compétences analytiques à un ensemble de données réelles - en l'occurrence des données de la ville de Paris
+```
+
+Nous nous sommes donc penchés sur la question du princing des places de parkings dans la ville de Paris.
+
+## L'équipe :
+
+Notre équipe est constituée de quatre personnes : 
+
+- Paul Garnier (MINES Paristech)
+- Marc-Adrien Gergaud (ESCP Europe - MINES Paristech)
+- Théophane Gregoir (MINES Paristech - Semestre à l'étranger MIT)
+- Arthur Verrez (MINES Paristech)
 
 # Explications : 
 
