@@ -34,9 +34,9 @@ Notre équipe est constituée de quatre personnes :
 
 ## Map : 
 
-- Quelques script en .py pour la création des cartes folium. Ils ne sont cependant compatibles qu'avec nos fichier .npy. 
+- Quelques scripts en .py pour la création des cartes folium. Ils ne sont cependant compatibles qu'avec nos fichiers .npy. 
 - Plusieurs exemples de cartes folium en .html. Pour les utiliser/afficher, récupérer le code source et l'enregistrer dans un fichier en .html. 
-- Par exemple, avec [map arrondissement](https://github.com/DonsetPG/OWDC/blob/master/Map/arrondissement-map-test.html), vous allez pouvoir afficher une carte présentant différentes caractéristiques par Arrondissement (temps passés, fréquentations, coût moyen, taux d'utilisateurs rotatifs et taux de carte bleue), ainsi que des parkings souterrains présents dans Paris (en bleu). 
+- Par exemple, avec [map arrondissement](https://github.com/DonsetPG/OWDC/blob/master/Map/arrondissement-map-test.html), vous allez pouvoir afficher une carte présentant différentes caractéristiques par arrondissement (temps passés, fréquentations, coût moyen, taux d'utilisateurs rotatifs et taux de carte bleue), ainsi que des parkings souterrains présents dans Paris (en bleu). 
 ![map](map.png)
 
 ## ScriptPython : 
