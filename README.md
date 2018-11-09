@@ -22,7 +22,7 @@ OW Datacase - Equipe Mines Paristech
 
 
 
-![MINES Paristech](/Users/PaulGarnier/Desktop/Logo_MINES_ParisTech.png)
+![MINES Paristech](/Desktop/Logo_MINES_ParisTech.png)
 
 
 
@@ -33,7 +33,7 @@ OW Datacase - Equipe Mines Paristech
 
 
 
-# _________________________________________________________________________________________________
+# _____________________________________________________________________________
 
 
 
