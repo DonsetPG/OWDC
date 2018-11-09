@@ -100,13 +100,13 @@ Traceback (most recent call last):
  
  et : 
  
- pour tout les modules (exemple avec pandas) : 
+ pour tous les modules (exemple avec pandas) : 
  
  ```python
 pip install pandas
  ```
  
-- 3 fichiers de data : le principal en contient 24millions. Il y en 2 samples sur le drive, sinon le fichier Data_tuto permet de les extraire en .npy et les utiliser en matrice numpy ensuite via 
+- 3 fichiers de data : le principal en contient 24millions. Il y en a 2 samples sur le drive, sinon le fichier Data_tuto permet de les extraire en .npy et de les utiliser en matrice numpy ensuite via 
 
 ```python
 dataset = np.load("/path/name_file.npy")
