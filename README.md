@@ -5,19 +5,36 @@ OW Datacase - Equipe Mines Paristech
 
 ## Data : 
 
-- Quelques graphes en .png, et les données de l'API de la Mairie de Paris sur les différents arrondissements (https://opendata.paris.fr/explore/dataset/arrondissements/table/), sous la forme d'un fichier GeoJson. Ce fichier est utilisé avec folium (https://github.com/python-visualization/folium) pour créer des cartes. 
+- Quelques graphes en .png, et les données de l'API de la Mairie de Paris sur les différents arrondissements [Paris Open Data : arrondissements](https://opendata.paris.fr/explore/dataset/arrondissements/table/), sous la forme d'un fichier GeoJson. Ce fichier est utilisé avec [folium](https://github.com/python-visualization/folium) pour créer des cartes. 
 - Les data en .npy ne sont pas disponibles sur le git.
 
 ## Map : 
 
 - Quelques script en .py pour la création des cartes folium. Ils ne sont cependant compatibles qu'avec nos fichier .npy. 
 - Plusieurs exemples de cartes folium en .html. Pour les utiliser/afficher, récupérer le code source et l'enregistrer dans un fichier en .html. 
-- Par exemple, avec https://github.com/DonsetPG/OWDC/blob/master/Map/arrondissement-map-test.html, vous allez pouvoir afficher une carte présentant différentes caractéristiques par Arrondissement (temps passés, fréquentations, coût moyen, taux d'utilisateurs rotatifs et taux de carte bleue), ainsi que des parkings souterrains présents dans Paris (en bleu). 
+- Par exemple, avec [map arrondissement](https://github.com/DonsetPG/OWDC/blob/master/Map/arrondissement-map-test.html), vous allez pouvoir afficher une carte présentant différentes caractéristiques par Arrondissement (temps passés, fréquentations, coût moyen, taux d'utilisateurs rotatifs et taux de carte bleue), ainsi que des parkings souterrains présents dans Paris (en bleu). 
 
 ## ScriptPython : 
 
 - {Data,Map,Graph}Maker : fichiers .py permettant la construction de la majorité de nos cartes, graphes, et des tableaux utilisés dans nos calculs.
 - AI : Programme permettant les simulations de nos environnements (GA,NN,RP) et des calculs de revenues. 
+
+
+
+
+![MINES Paristech](/Users/PaulGarnier/Desktop/Logo_MINES_ParisTech.png)
+
+
+
+
+
+
+
+
+
+
+# _________________________________________________________________________________________________
+
 
 
 # Pour l'équipe : 
